@@ -1,0 +1,57 @@
+ * {
+    background: #fd5c63;
+       }
+ h2 {
+       font-size: 25px;
+       }
+ h1 {
+      font-size: 30px;
+      text-align: center;
+      height: 50px;
+ }  
+ p {
+ text-align: center;
+ height: 25px;
+ }
+ h3 {
+font-size: 50px;
+text-align: center;
+ }
+ 
+ 
+article {
+      clear: both;
+  }
+  
+  article section {
+      width: 1457px;
+      background-color: #FFC0CB;
+      padding: 30px;
+  }
+
+  nav {
+    list-style: none;
+    height: 50px;
+    
+    align-items: center;
+    
+  }
+  ul {
+      display: flex;            /* Flexbox pro položky vedle sebe */
+      justify-content: center;  /
+  }
+  
+  ul li {
+    display: inline;
+   margin-right: 20px;
+  }
+  ul li a{
+    background-color: #8B0000;
+    padding: 20px
+    
+  }
+  ul li a {
+   color: white;
+      text-decoration: none;
+  }
+  

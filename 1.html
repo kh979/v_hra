@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="cs-cz">
+    <head>
+        <meta charset="utf-8" />
+        <title>Jak získat princeznu</title>
+       <link rel="stylesheet" href="styld1.css">
+    <body>
+  <h1> Kde je drak?</h1>
+   <article>
+
+<section>
+    Honza nelení a vydává se na draka. Když dorazí na místo, nalezne papírek:
+    
+
+</section>
+
+   </article>
+ 
+
+   <div class="center">
+      <img src="pap.png"  width="50%"   /> <br>
+    
+      
+    </div>
+<article>
+
+   <section>
+      Aby šifru vyluštil a zjistil, kde draka hledat a koho musí navštívit, pro jeho úspěšné poražení, bude se mu určitě hodit <a href="sifra.html">Přehled šifer</a>. Až bude vědět, za kým má jít, stačí její jméno napsat do řádku níže. Informaci o lokaci drak pečlivě uschovej!
+   
+   </section>
+   
+</article>
+ 
+</div>
+
+<!-- Formulář pro zadání číselné kombinace -->
+<div id="inputBox" style="text-align: center; margin-top: 20px;">
+  <label for="codeInput">Zadej bez mezer, diakritiky a vše malým:</label><br><br>
+  <input type="text" id="codeInput" placeholder="Např. 1234">
+  <button type="button" onclick="checkCode()">Odeslat</button>
+</div>
+
+<!-- Výsledek (odkaz na další stránku) -->
+<div id="result" style="display: none; text-align: center; margin-top: 20px;">
+  <p>Výborně!</p>
+  <a href="car.html">Rychle za čarodějnicí!</a>
+</div>
+
+<!-- JavaScript -->
+<script>
+  function checkCode() {
+    // Získání hodnoty zadané uživatelem
+    var userInput = document.getElementById("codeInput").value;
+
+    // Definování správné kombinace čísel
+    var correctCode = "mionkaanomalni";  // Změňte tuto hodnotu na požadovanou kombinaci
+
+    // Kontrola, zda je zadaná kombinace správná
+    if (userInput === correctCode) {
+      // Pokud je kombinace správná, zobrazí se odkaz na další stránku
+      document.getElementById("result").style.display = "block";
+    } else {
+      // Pokud není správná, uživateli se ukáže chybová zpráva
+      alert("Zkus to znovu a pozorněji!");
+    }
+  }
+</script>
+
+
+    </body>
+</html>

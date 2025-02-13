@@ -1,0 +1,89 @@
+
+
+body {
+	font: 14px Verdana;
+}
+
+
+
+
+p, h1, h2 {
+      text-align: center;
+}
+p {
+height: 25px;
+}
+
+h1 {
+font-size: 50px;
+}
+
+h3 {
+font-size: 20px;
+color: #000080; 
+}
+* {
+    background: #fd5c63;
+}
+
+header {
+    height: 100px;   
+}
+
+article {
+    clear: both;
+}
+
+article section {
+    width: 1457px;
+    background-color: #FFC0CB;
+    padding: 30px;
+}
+
+nav {
+  list-style: none;
+  height: 50px;
+  
+  align-items: center;
+  
+}
+ul {
+    display: flex;            /* Flexbox pro položky vedle sebe */
+    justify-content: center;  /
+}
+
+ul li {
+  display: inline;
+ margin-right: 20px;
+}
+ul li a{
+  background-color: #8B0000;
+  padding: 20px
+  
+}
+ul li a {
+ color: white;
+    text-decoration: none;
+}
+
+/* article aside {
+    text-align: center; 
+   }
+article aside a {
+color: white;
+    text-decoration: none;
+    }    */
+.cistic {
+    clear: both;
+}
+
+
+
+.center {
+    text-align: center; /* Zarovná všechny inline elementy na střed */
+    }
+    
+.center-list {
+    display: flex;
+    justify-content: center;  /* Horizontální centrování */
+    }

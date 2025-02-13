@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="cs-cz">
+    <head>
+        <meta charset="utf-8" />
+        <title>Jak získat princeznu</title>
+       <link rel="stylesheet" href="styld1.css">
+    <body>
+  <h1> V laboratoři </h1>
+   <article>
+
+<section>
+    Honza má na stole připravené materiály ke třem potenciálním sekvencím, na které by mohl retrovir potenciálně upravit. V retroviru už je cas protein, teď záleží pouze na 
+    výběru té správné sekvence na přepsání nastavení T-lymfoctů
+    
+
+</section>
+
+   </article>
+  
+
+<article>
+
+   <section>
+    Sekvence A:
+    CTAGGACATGAGGAGGACAGCTGAGGAGTGAGGAGCTGAGGTGAGGAAGTGA
+    Tato sekvence kóduje chimerický antigenní receptor (CAR), který umožní T-buňkám rozpoznávat a cílit na specifické antigeny 
+    přítomné na povrchu rakovinných buněk, například EGFR (Epidermal Growth Factor Receptor), který je často exprimován na rakovinných buňkách plic (NSCLC).
+     Tato úprava lentiviru je součástí CAR-T terapie, která umožňuje imunitnímu systému účinněji bojovat proti rakovině plic.
+
+   </section>
+   
+</article>
+
+<article>
+
+    <section>
+        Sekvence B:
+        CCGTGAAGGTCAGGT
+        Tato sekvence cílí na EGFR receptor, což je protein, který je vysoce exprimován na povrchu rakovinných buněk plic (NSCLC). Ačkoliv tato sekvence může být
+         použita v terapiích zaměřených na rakovinné buňky s tímto receptorem, nejedná se o sekvenci pro CAR-T terapii, která by upravila T-buňky 
+         k rozpoznávání rakovinných buněk.
+ 
+    </section>
+    
+ </article>
+ 
+ <article>
+
+    <section>
+        Sekvence C:
+        AGGAGAGGAGTGAGGAAGTAGGAGAGGGAGGAAGTGAGGAAGTAGAGAGGAGGA
+        Tato sekvence kóduje interleukin-2 (IL-2), který stimuluje růst a aktivaci T-buněk. IL-2 pomáhá posílit imunitní odpověď proti rakovinným buňkám, 
+        ale neumožňuje T-buňkám cílit přímo na rakovinné buňky tak specificky, jako je to v případě CAR-T terapie. 
+        Tato sekvence tedy není tak specifická pro úpravu T-buněk k boji proti rakovině plic.
+ 
+    </section>
+    
+ </article>
+
+
+
+
+
+
+</div>
+
+<!-- Formulář pro zadání číselné kombinace -->
+<div id="inputBox" style="text-align: center; margin-top: 20px;">
+  <label for="codeInput">Zadej písmeno sekvence (A,B,C):</label><br><br>
+  <input type="text" id="codeInput" placeholder="Např. Z">
+  <button type="button" onclick="checkCode()">Odeslat</button>
+</div>
+
+<!-- Výsledek (odkaz na další stránku) -->
+<div id="result" style="display: none; text-align: center; margin-top: 20px;">
+  <p>Výborně!</p>
+  <a href="zamek.html">Tudy na zámek</a>
+</div>
+
+<!-- JavaScript -->
+<script>
+  function checkCode() {
+    // Získání hodnoty zadané uživatelem
+    var userInput = document.getElementById("codeInput").value;
+
+    // Definování správné kombinace čísel
+    var correctCode = "A";  // Změňte tuto hodnotu na požadovanou kombinaci
+
+    // Kontrola, zda je zadaná kombinace správná
+    if (userInput === correctCode) {
+      // Pokud je kombinace správná, zobrazí se odkaz na další stránku
+      document.getElementById("result").style.display = "block";
+    } else {
+      // Pokud není správná, uživateli se ukáže chybová zpráva
+      alert("Zkus to znovu a pozorněji!");
+    }
+  }
+</script>
+
+
+    </body>
+</html>

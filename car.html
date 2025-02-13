@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+  <meta charset="utf-8" />
+  <title>Moje první webová stránka</title>
+  <link rel="stylesheet" href="styl_car.css"> <!-- Pokud chceš přidat externí CSS -->
+</head>
+
+<body>
+  <h1> Čarodějnice Mionka Anomální </h1>
+
+  <!-- První article -->
+  <article>
+   <section>
+        Když Honza vešel do chýše čarodějnice, nestačil se divit. Po stolech se válely papíry s výpočty a zpoza kotlíku vykukovalo nebezpečně vypadající zařízení připomínající urychlovač.... I čarodějnice samotná byla atypická, namísto staré ženy připomínala spíše zarytou matfyzačku...
+      </section>
+      
+   
+  </article>
+
+  <!-- Seznam instrukcí -->
+
+  <article>
+    <section>
+   "Ach, konečně někdo! Čekám na tebe už celou věčnost!" zvolala nadšeně. <br>
+   "Princezna Veronika si dle mého vymyslela nesmyslně těžké úkoly, ale budiž, předpokládám, že jsi zde kvůli lekvaru?" vychrlila horečně.<br>
+   "Pokud správně uhodneš tři mé fyzikální hádanky, je jen tvůj! pomůže ti se dostat k drakovi nepozorován!
+   "<br>
+</section>
+  </article>
+
+
+
+  <div class="center-list">
+  <ul>
+    <li> Čím přesněji se snažíš určit moji rychlost, tím méně jsi si jistým, kde jsem. Jakou vlastnost určitých fyzikálních objektů popisuji? (napiš pouze začáteční písmena - Mechanika hmotného bodu = MHB) </li>
+
+    <li> ....... </li>
+    <li> Která částice je nejmenší složkou hmoty? </li>
+    <li> ....... </li>
+    <li> Jakému bosonu se přezdívá Božská částice?  </li>
+    
+  </ul>
+  </div>
+
+
+
+
+  <!-- Druhý article -->
+  
+
+  
+
+  <!-- Formulář pro zadání číselné kombinace -->
+  <div id="inputBox" style="text-align: center; margin-top: 20px;">
+    <label for="codeInput">Zadej odpovědi na hádanky a místo výskytu draka z šifry :</label><br><br>
+    <input type="text" id="codeInput" placeholder="Např. ahoj,pes,petrovu+les">
+    <button type="button" onclick="checkCode()">Odeslat</button>
+  </div>
+
+  <!-- Výsledek (odkaz na další stránku) -->
+  <div id="result" style="display: none; text-align: center; margin-top: 20px;">
+    <p>Výborně!</p>
+    <a href="drak.html">Směle na draka!</a>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function checkCode() {
+      // Získání hodnoty zadané uživatelem
+      var userInput = document.getElementById("codeInput").value;
+
+      // Definování správné kombinace čísel
+      var correctCode = "HPN,kvark,higgsovu+jeskyne"  // Změňte tuto hodnotu na požadovanou kombinaci
+
+      // Kontrola, zda je zadaná kombinace správná
+      if (userInput === correctCode) {
+        // Pokud je kombinace správná, zobrazí se odkaz na další stránku
+        document.getElementById("result").style.display = "block";
+      } else {
+        // Pokud není správná, uživateli se ukáže chybová zpráva
+        alert("Zkus to znovu!");
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,41 @@
+h1 {
+        text-align: center;
+        }
+   * {
+      background:#FFA07A;
+    
+}
+ p {
+    font-size: 35px
+
+ } 
+ a  {
+   color:rgb(195, 30, 41);
+   text-decoration: none;
+   background: #FFC0CB;
+   }
+ /*}
+ article {
+   clear: both;
+}*/
+ul {
+list-style-type: none;
+width: 250px;
+background-color: #EADDCA;
+padding: 20px;
+}
+ul li {
+   background-color: #EADDCA;
+   margin-right: 1000;
+}
+
+article {
+   clear: both;
+}
+
+article section {
+   width: 1457px;
+   background-color: #FFC0CB;
+
+   padding: 30px;
+}

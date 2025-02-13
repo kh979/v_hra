@@ -1,0 +1,130 @@
+<!--<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+  <meta charset="utf-8" />
+<title>Moje první webová stránka</title>
+ <link rel="stylesheet" href="stylk1.css"> 
+</head>
+
+<body>
+   <h1> Květiny </h1>
+   <article>
+    <section>
+      Po dlouhé cestě na místo dané časoprostorovými souřadnicemi, které byly laskavě poskytnuty princeznou se Honza ocitá na lesním palouku. 
+   Zde nachází instrukce vyryté do kůry stromu, podle kterých musí sestavit kytici pro princeznu.
+    </section>
+   </article>
+
+   
+      
+   
+    <ul>
+      <li>  Musí vyjadřovat to, co ke mně cítíš a nejsi schopen mi říci do očí </li>
+       <li>  Ať vyjádří to, že jsem pro tebe ta jediná</li>
+      <li> Vyvaruj se zažitým klišé  </li>
+       <li>   ---i dare you to love me?---</li>
+      </ul>
+   
+    
+   <article>
+    <section>
+      Honza se rozhlédne a vůbec neví po kterých květinách na palouku sáhnout. Naštěstí má u sebe <a href="slovnik.html"> Slovník květin</a> 
+      Slovník květin, který by mu mohl napovědět...
+    </section>
+   </article>
+   
+   
+    
+  
+  
+
+</body>
+
+
+</html>
+-->
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+  <meta charset="utf-8" />
+  <title>Jak získat princeznu</title>
+  <link rel="stylesheet" href="stylk1.css"> <!-- Pokud chceš přidat externí CSS -->
+</head>
+
+<body>
+  <h1> Květiny </h1>
+
+  <!-- První article -->
+  <article>
+    <section>
+      
+        Po dlouhé cestě na místo dané časoprostorovými souřadnicemi, které byly laskavě poskytnuty princeznou, se Honza ocitá na lesním palouku. 
+        Zde nachází instrukce vyryté do kůry stromu, podle kterých musí sestavit kytici pro princeznu.
+      
+    </section>
+  </article>
+
+  <!-- Seznam instrukcí -->
+
+  <div class="center-list">
+  <ul>
+    <li> Musí vyjadřovat věrnost a tvou lásku ke mně </li>
+    <li> Ať vyjádří to, že jsem pro tebe ta jediná</li>
+    <li> Vyvaruj se zažitým klišé  </li>
+    <li> Chci v kytici 5 různých květin</li>
+  </ul>
+  </div>
+  <!-- Druhý article -->
+  <article>
+    <section>
+      
+        Honza se rozhlédne a vůbec neví po kterých květinách na palouku sáhnout. Naštěstí má u sebe <a href="slovnik.html">Slovník květin</a>, 
+        který by mu mohl napovědět...
+      
+    </section>
+  </article>
+
+  <div class="center">
+  <img src="palouk.png"  width="50%"   /> <br>
+
+  
+</div>
+
+  <!-- Formulář pro zadání číselné kombinace -->
+  <div id="inputBox" style="text-align: center; margin-top: 20px;">
+    <label for="codeInput">Zadej čísla květin v kytici vzestupně:</label><br><br>
+    <input type="text" id="codeInput" placeholder="Např. 1234">
+    <button type="button" onclick="checkCode()">Odeslat</button>
+  </div>
+
+  <!-- Výsledek (odkaz na další stránku) -->
+  <div id="result" style="display: none; text-align: center; margin-top: 20px;">
+    <p>Princezně se kytice moc líbila!</p>
+    <a href="3.html">Vzhůru na další úkol!</a>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function checkCode() {
+      // Získání hodnoty zadané uživatelem
+      var userInput = document.getElementById("codeInput").value;
+
+      // Definování správné kombinace čísel
+      var correctCode = "34568";  // Změňte tuto hodnotu na požadovanou kombinaci
+
+      // Kontrola, zda je zadaná kombinace správná
+      if (userInput === correctCode) {
+        // Pokud je kombinace správná, zobrazí se odkaz na další stránku
+        document.getElementById("result").style.display = "block";
+      } else {
+        // Pokud není správná, uživateli se ukáže chybová zpráva
+        alert("Ale ne :( princezna je zklamaná. Zkus to znovu!");
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,63 @@
+h1, h2 {
+    text-align: center;
+    }
+* {
+  background: #fd5c63;
+
+}
+p {
+font-size: 15px;
+height: 5px;
+} 
+
+/*}
+article {
+clear: both;
+}*/
+
+nav {
+  list-style: none;
+  height: 50px;
+  
+  align-items: center;
+  
+}
+ul {
+    display: flex;            /* Flexbox pro položky vedle sebe */
+    justify-content: center;  /
+}
+
+ul li {
+  display: inline;
+ margin-right: 20px;
+}
+ul li a{
+  background-color: #8B0000;
+  padding: 20px
+  
+}
+ul li a {
+ color: white;
+    text-decoration: none;
+}
+
+article {
+clear: both;
+}
+
+article section {
+width: 1457px;
+background-color: #FFC0CB;
+
+padding: 30px;
+}
+
+
+.center {
+text-align: center; /* Zarovná všechny inline elementy na střed */
+}
+
+.center-list {
+display: flex;
+justify-content: center;  /* Horizontální centrování */
+}
